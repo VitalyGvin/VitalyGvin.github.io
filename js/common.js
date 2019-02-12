@@ -9,3 +9,9 @@ $(document).ready(function() {
 	$("#point-3").addClass("point-3");
 
 });
+
+$(window).load(function() {
+
+	$("#logo").removeClass("invisible");
+
+});

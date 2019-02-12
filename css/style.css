@@ -115,6 +115,10 @@ body {
 	text-shadow: none;
 }
 
+.invisible {
+	display: none;
+}
+
 .title {
 	width: 100%;
 	box-sizing: border-box;
