@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 250; }
+@font-face {
+  font-family: "Arimo";
+  src: url("../fonts/Arimo/Arimo-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+h1 {
+  font-size: 3.125rem;
+  font-family: "Arimo", sans-serif;
+  font-weight: 700; }
+
+h2 {
+  font-size: 2.25rem;
+  letter-spacing: 0.0625rem;
+  color: #550d25;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center; }
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: 400; }
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2.187rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 1rem; }

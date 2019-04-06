@@ -1,0 +1,61 @@
+/*
+Error: Invalid CSS after "$color*\/": expected expression (e.g. 1px, bold), was ""
+        on line 26 of D:\DescWork\InCreate\Site_cograf\site\css\color.sass
+
+21: .color_element
+22: 	color: $color
+23: .color_bg
+24: 	background-color: $color
+25: .color_border
+26: 	border-color: $color*\/
+
+Backtrace:
+D:\DescWork\InCreate\Site_cograf\site\css\color.sass:26
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:723:in `assert_expr'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:295:in `unary_div'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_minus'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_plus'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:721:in `assert_expr'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:280:in `times_div_or_mod'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `plus_or_minus'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `relational'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `eq_or_neq'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `and_expr'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `or_expr'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:473:in `space'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:414:in `interpolation'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:338:in `expr'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:721:in `assert_expr'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:228:in `parse'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script.rb:27:in `parse'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:1177:in `parse_script'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:749:in `parse_property'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:708:in `parse_property_or_rule'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:667:in `parse_line'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:540:in `build_tree'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+D:/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+D:/Koala/bin/sass:22:in `load'
+D:/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"$color*/\": expected expression (e.g. 1px, bold), was \"\"\A         on line 26 of D:\DescWork\InCreate\Site_cograf\site\css\color.sass\A \A 21: .color_element\A 22: 	color: $color\A 23: .color_bg\A 24: 	background-color: $color\A 25: .color_border\A 26: 	border-color: $color*/"; }
