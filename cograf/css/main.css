@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  min-width: 380px;
+  min-width: 360px;
   position: relative;
   line-height: 1.42857;
   -webkit-font-smoothing: antialised; }
@@ -18,6 +18,9 @@ body textarea:required:valid {
 .hidden {
   display: none; }
 
+input:focus {
+  outline: none; }
+
 a {
   display: inline-block;
   margin: auto;
@@ -29,7 +32,10 @@ a {
     color: #ffffff; }
   a:focus {
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    outline: none; }
+  a:hover {
+    color: #ffffff; }
 
 a.button {
   color: #ffffff;
@@ -37,6 +43,11 @@ a.button {
   background-color: #76233f;
   padding: 1rem 2.6rem;
   border-radius: 0.6rem; }
+  a.button:hover {
+    background-color: #923D59;
+    text-decoration: none; }
+  a.button:focus {
+    background-color: #923D59; }
 
 button {
   color: #ffffff;
@@ -49,6 +60,10 @@ button {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.875rem; }
+  button:focus, button:hover, button:active {
+    background-color: #923D59; }
+  button:focus {
+    outline: none; }
 
 section {
   width: 100%;
@@ -98,6 +113,8 @@ section {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.875rem; }
+  .conditions a:hover, .conditions a:focus, .conditions a:active {
+    color: #923D59; }
   .conditions a:last-child {
     margin-top: 0.5rem; }
   .conditions a:before {
@@ -211,8 +228,15 @@ section {
 footer {
   background-color: #efece8;
   padding: 20px 0; }
-  footer .logo img {
-    height: 2.5rem; }
+  footer .logo {
+    height: 2.8rem;
+    width: 2.8rem;
+    background-image: url(../img/vk.png);
+    background-size: 100%; }
+    footer .logo:hover {
+      background-image: url(../img/vk_hover.png); }
+  footer .logo-container a {
+    display: block; }
   footer span {
     font-size: 0.875rem;
     line-height: 1.875rem;

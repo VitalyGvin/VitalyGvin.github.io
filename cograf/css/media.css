@@ -2,7 +2,68 @@
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
+@media only screen and (max-width: 575px) {
+  .conditions p, .conditions a {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  footer {
+    padding: 10px 0; } }
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 2rem;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem; }
+
+  .banner {
+    text-align: center;
+    padding-bottom: 4.5rem; }
+    .banner p {
+      letter-spacing: 0; }
+    .banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem; }
+    .banner h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem; }
+    .banner .button {
+      margin-top: 2rem; }
+
+  .counter span {
+    font-size: 1.5rem; }
+
+  section {
+    padding: 2rem 0; }
+
+  .info p {
+    line-height: 1.75rem; }
+
+  .schedule p.descr {
+    font-size: 1.25rem;
+    line-height: 2rem; }
+  .schedule .date-card {
+    margin-bottom: 2rem; }
+
+  .conditions a:before {
+    margin-right: 0.75rem; }
+
+  .application {
+    padding-top: 3rem; }
+    .application h2 {
+      font-size: 2.25rem; }
+    .application input:first-child {
+      margin-top: 2rem; }
+
+  .contacts {
+    padding-bottom: 0; }
+    .contacts h2 {
+      font-size: 2.25rem; }
+    .contacts .adress, .contacts .phone, .contacts .email {
+      margin-bottom: 1.5rem; } }
+@media only screen and (max-width: 420px) {
+  .schedule p.descr {
+    padding-left: 2rem; } }
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ========== */
 /* Custom, iPhone Retina */
@@ -139,8 +200,9 @@
     padding: 0;
     padding-top: 2.25rem; }
 
-  footer .logo img {
-    height: 3.2rem; }
+  footer .logo {
+    height: 3.2rem;
+    width: 3.2rem; }
 
   /* Large Devices, Wide Screens */ }
 @media only screen and (min-width: 1200px) {
