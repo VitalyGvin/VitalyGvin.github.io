@@ -107,6 +107,8 @@ section {
     font-size: 1.25rem;
     font-weight: 250;
     letter-spacing: 0.0625rem; }
+    .banner p span {
+      white-space: nowrap; }
   .banner h1, .banner h3 {
     margin-bottom: 0.7rem; }
   .banner .button {
