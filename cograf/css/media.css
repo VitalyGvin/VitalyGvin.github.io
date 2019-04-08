@@ -68,6 +68,9 @@
 /*==========  Mobile First Method  ========== */
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .schedule .date {
+    box-shadow: 0 0 50px 0px rgba(177, 171, 153, 0.6); } }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   h2 {

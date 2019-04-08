@@ -9,11 +9,11 @@ body {
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-  color: red; }
+  color: #333333; }
 
 body input:required:valid,
 body textarea:required:valid {
-  color: green; }
+  color: #333333; }
 
 .hidden {
   display: none; }
@@ -65,6 +65,30 @@ button {
   button:focus {
     outline: none; }
 
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+  .loader .loader-inner {
+    background-image: url(../img/preloader.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #ffffff;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    left: 50%;
+    top: 50%;
+    position: absolute; }
+
 section {
   width: 100%;
   padding: 2.5rem 0; }
@@ -95,6 +119,8 @@ section {
     font-size: 1.875rem;
     color: #333333;
     font-weight: 400; }
+  .counter #day {
+    font-weight: 700; }
 
 .info {
   text-align: center; }
@@ -111,8 +137,10 @@ section {
   .conditions p {
     color: #333333;
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 300;
     line-height: 1.875rem; }
+    .conditions p b {
+      font-weight: 700; }
   .conditions a:hover, .conditions a:focus, .conditions a:active {
     color: #923D59; }
   .conditions a:last-child {
