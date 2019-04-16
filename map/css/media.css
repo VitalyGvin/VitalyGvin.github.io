@@ -1,0 +1,44 @@
+/*==========  Desktop First Method  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1349px) {
+  .title {
+    display: inline-block;
+    width: auto; }
+
+  .cards .card {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%; }
+
+  .th-card {
+    padding-top: 0.25rem; } }
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1100px) {
+  .title {
+    width: 50%; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 700px) {
+  .title {
+    display: inline-block;
+    width: 100%;
+    margin-top: 3rem; }
+
+  .cards {
+    padding-top: 3rem; }
+    .cards .card {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%; }
+
+  .tr-card {
+    padding-top: 0.25rem; } }
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ========== */
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /* Medium Devices, Desktops */ }
+@media only screen and (min-width: 992px) {
+  /* Large Devices, Wide Screens */ }
+
+/*# sourceMappingURL=media.css.map */

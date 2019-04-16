@@ -1,0 +1,231 @@
+.ymaps-2-1-73-balloon__content, .ymaps-2-1-73-balloon__layout, .ymaps-2-1-73-balloon__tail:after {
+  background-color: gray !important; }
+
+.ymaps-2-1-73-balloon__content {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
+#map {
+  width: 100%;
+  height: 66vh; }
+
+.map {
+  width: 100%;
+  height: 66vh; }
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 15px;
+  min-height: 100vh;
+  min-width: 431px;
+  max-width: 2000px;
+  background-color: #fdef36;
+  font-family: "Mplus1", sans-serif; }
+
+h2, h3, h4, p, span {
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  line-height: 1.75rem;
+  font-size: 2rem; }
+
+h3 {
+  display: inline-block;
+  line-height: 2rem;
+  font-weight: bold;
+  font-size: 1.15rem; }
+
+h4 {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Mplus1", sans-serif;
+  text-transform: uppercase; }
+
+p.descr {
+  display: block;
+  line-height: 0.9rem;
+  font-size: 1rem;
+  font-family: "Mplus1", sans-serif;
+  text-transform: uppercase; }
+
+.head {
+  height: 3rem;
+  border-bottom: 1px solid #a0a0a0; }
+  .head img {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem; }
+
+.second-head {
+  margin-top: 2rem; }
+
+span.time {
+  font-weight: bold;
+  font-size: 1rem; }
+
+div {
+  box-sizing: border-box; }
+
+.poster {
+  border: solid black 1px; }
+
+.cards {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-top: 1px solid black; }
+
+.title {
+  height: 6rem;
+  width: 25%;
+  position: relative;
+  bottom: 6rem;
+  margin-top: 1px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  background-color: #fdef36; }
+
+.card {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  padding: 1rem;
+  border-right: solid black 1px; }
+  .card:last-child {
+    border: none; }
+  .card .note {
+    position: relative;
+    margin-top: 1.25rem;
+    cursor: pointer; }
+    .card .note p {
+      line-height: 0.9rem; }
+      .card .note p.place {
+        color: #696969; }
+  .card .first-note {
+    margin-top: 0; }
+  .card .number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    font-weight: bold;
+    margin-left: 0.75rem; }
+  .card .info {
+    margin-left: 2.75rem; }
+
+.note:hover {
+  background-color: #e8d911; }
+
+.show {
+  z-index: 999;
+  display: none; }
+
+.show .overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.66);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+.show .img-show {
+  max-width: 600px;
+  width: 90%;
+  background-color: transparent;
+  height: 228px;
+  overflow: visible;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; }
+
+.overlay span {
+  position: fixed;
+  color: white;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  cursor: pointer; }
+
+img.popap {
+  width: auto;
+  height: 150px;
+  margin-top: 0.75rem;
+  cursor: pointer; }
+
+.img-show img {
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 0; }
+
+.my-layout {
+  text-align: center;
+  max-width: 14rem; }
+  .my-layout h4, .my-layout p {
+    color: white; }
+
+.cntrl-btn {
+  height: 42px;
+  width: 42px;
+  background-size: contain;
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5)); }
+  .cntrl-btn:active {
+    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.5)); }
+
+#zoom-in {
+  background-image: url(../img/plus.png);
+  margin-bottom: -10px; }
+  #zoom-in:hover {
+    background-image: url(../img/plus-w.png); }
+
+#zoom-out {
+  background-image: url(../img/minus.png); }
+  #zoom-out:hover {
+    background-image: url(../img/minus-w.png); }
+
+.ymaps-2-1-73-controls__control {
+  position: absolute !important;
+  top: 26vh !important;
+  right: 10px !important;
+  left: auto !important; }
+
+.loader {
+  background: none repeat scroll 0 0 #fdef36;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+
+.loader .loader_inner {
+  background-image: url(../img/preloader.gif);
+  background-repeat: no-repeat;
+  background-posirion: center center;
+  background-color: #fff;
+  height: 410px;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute; }
+
+/*# sourceMappingURL=main.css.map */

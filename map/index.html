@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=0c0df112-2025-49b9-9aa3-470f37cd508d&lang=ru_RU" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/media.css" />
+	<style>
+		[class*="ymaps-2"][class*="-ground-pane"] {
+			-webkit-filter:grayscale(100%) url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'yellowfilter\'><feColorMatrix type=\'matrix\' values=\'0.99 0 0 0 0 0 0.94 0 0 0 0 0 0.21 0 0 0 0 0 1 0\'/></filter></svg>#yellowfilter");
+			filter:grayscale(100%) url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'yellowfilter\'><feColorMatrix type=\'matrix\' values=\'0.99 0 0 0 0 0 0.94 0 0 0 0 0 0.21 0 0 0 0 0 1 0\'/></filter></svg>#yellowfilter");
+		}
+	</style>
+</head>
+<body id="general">
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<div class="show">
+		<div class="overlay">
+			<span>X</span>
+		</div>
+		<div class="img-show">
+			<img src="">
+		</div>
+	</div>
+
+	<section class="poster">
+		<div class="map">
+
+			<div id="map">
+				
+			</div>
+			<div class="title">
+				<h2>ВЫСТАВОЧНАЯ<br>ПРОГРАММА</h2>
+				<span class="time">19:00-23:00 </span>
+				<span class="comment">ВХОД СВОБОДНЫЙ [0+]</span>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="card first_card">
+
+				<div class="head">
+					<img src="img/title1.png" alt="">
+					<h3>УЛИЧНАЯ ИНСТАЛЛЯЦИЯ</h3>
+				</div>
+
+				<div class="note soft_scroll" id="myPlacemark1" onmouseover="myPlacemark1.options.set('iconImageHref', 'img/point1-w.png'); myMap.panTo(myPlacemark1.geometry.getCoordinates());" onmouseout="myPlacemark1.options.set('iconImageHref', 'img/point1.png')" onclick="myPlacemark1.options.set('iconImageHref', 'img/point1.png'); myPlacemark1.balloon.open()">
+					<div class="number">1</div>
+					<div class="info">
+						<h4>ФАБРИКА «МАЯК»</h4>
+						<p class="descr">ПРОЕКЦИОННЫЕ ИНСТАЛЛЯЦИИ НА ФАСАД</p>
+						<p class="place">НИЖНЕВОЛЖСКАЯ НАБЕРЕЖНАЯ, 11</p>
+					</div>
+				</div>
+
+
+				<div class="note soft_scroll" id="myPlacemark4" onmouseover="myPlacemark4.options.set('iconImageHref', 'img/point4-w.png'); myMap.panTo(myPlacemark4.geometry.getCoordinates());" onmouseout="myPlacemark4.options.set('iconImageHref', 'img/point4.png')" onclick="myPlacemark4.options.set('iconImageHref', 'img/point4.png'); myPlacemark4.balloon.open()">
+					<div class="number">4</div>
+					<div class="info">
+						<h4>ПАКГАУЗЫ НА СТРЕЛКЕ</h4>
+						<p class="descr">СВЕТОВАЯ ДИНАМИЧЕСКАЯ ИНСТАЛЛЯЦИЯ НА АРХИТЕКТУРУ ОБЪЕКТА</p>
+						<p class="place">СТРЕЛКА</p>
+					</div>
+				</div>
+
+
+				<div class="note soft_scroll" id="myPlacemark5" onmouseover="myPlacemark5.options.set('iconImageHref', 'img/point5-w.png'); myMap.panTo(myPlacemark5.geometry.getCoordinates());" onmouseout="myPlacemark5.options.set('iconImageHref', 'img/point5.png')" onclick="myPlacemark5.options.set('iconImageHref', 'img/point5.png'); myPlacemark5.balloon.open()">
+					<div class="number">5</div>
+					<div class="info">
+						<h4>МУКОМОЛЬНЫЙ ЗАВОД</h4>
+						<p class="descr">МАСШТАБНАЯ ГРАФФИТИ-РАБОТА НА ФАСАД С 3D-МЭППИНГОМ</p>
+						<p class="place">ЧЕРНИГОВСКАЯ, 17В</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="card tr-card">
+
+
+				<div class="note soft_scroll first-note soft_scroll" id="myPlacemark6" onmouseover="myPlacemark6.options.set('iconImageHref', 'img/point6-w.png'); myMap.panTo(myPlacemark6.geometry.getCoordinates());" onmouseout="myPlacemark6.options.set('iconImageHref', 'img/point6.png')" onclick="myPlacemark6.options.set('iconImageHref', 'img/point6.png'); myPlacemark6.balloon.open()">
+					<div class="number">6</div>
+					<div class="info">
+						<h4>ПАМЯТНИК М.ГОРЬКОМУ</h4>
+						<p class="descr">360-ГРАДУСНАЯ ПРОЕКЦИЯ НА КУПОЛ</p>
+						<p class="place">ПЛОЩАДЬ ГОРЬКОГО</p>
+					</div>
+				</div>
+
+
+				<div class="note soft_scroll" id="myPlacemark7" onmouseover="myPlacemark7.options.set('iconImageHref', 'img/point7-w.png'); myMap.panTo(myPlacemark7.geometry.getCoordinates());" onmouseout="myPlacemark7.options.set('iconImageHref', 'img/point7.png')" onclick="myPlacemark7.options.set('iconImageHref', 'img/point7.png'); myPlacemark7.balloon.open()">
+					<div class="number">7</div>
+					<div class="info">
+						<h4>ТЕЛЕБАШНЯ</h4>
+						<p class="descr">ДИНАМИЧЕСКАЯ СВЕТОВАЯ ИНСТАЛЛЯЦИЯ НА БАШНЕ</p>
+						<p class="place">ПАРК ПУШКИНА</p>
+					</div>
+				</div>
+				<div class="head second-head">
+					<img src="img/title2.png" alt="">
+					<h3>ИНСТАЛЛЯЦИЯ В ЗДАНИИ</h3>
+				</div>
+
+
+				<div class="note soft_scroll" id="myPlacemark2" onmouseover="myPlacemark2.options.set('iconImageHref', 'img/point2-w.png'); myMap.panTo(myPlacemark2.geometry.getCoordinates());" onmouseout="myPlacemark2.options.set('iconImageHref', 'img/point2.png')" onclick="myPlacemark2.options.set('iconImageHref', 'img/point2.png'); myPlacemark2.balloon.open()">
+					<div class="number">2</div>
+					<div class="info">
+						<h4>ФАБРИКА «МАЯК»</h4>
+						<p class="descr">ЛАЗЕРНАЯ ПРОСТРАНСТВЕННАЯ ИНСТАЛЛЯЦИЯ</p>
+						<p class="place">НИЖНЕВОЛЖСКАЯ НАБЕРЕЖНАЯ, 11</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="card th-card">
+
+
+				<div class="note soft_scroll first-note soft_scroll" id="myPlacemark3" onmouseover="myPlacemark3.options.set('iconImageHref', 'img/point3-w.png'); myMap.panTo(myPlacemark3.geometry.getCoordinates());" onmouseout="myPlacemark3.options.set('iconImageHref', 'img/point3.png')" onclick="myPlacemark3.options.set('iconImageHref', 'img/point3.png'); myPlacemark3.balloon.open()">
+					<div class="number">3</div>
+					<div class="info">
+						<h4>FUTURO</h4>
+						<p class="descr">ВЫСТАВКА УЛИЧНОГО ИСКУССТВА С ИСПОЛЬЗОВАНИЕМ НОВЫХ ТЕХНОЛОГИЙ</p>
+						<p class="place">РОЖДЕСТВЕНСКАЯ, 6</p>
+					</div>
+				</div>
+
+
+				<div class="note soft_scroll" id="myPlacemark8" onmouseover="myPlacemark8.options.set('iconImageHref', 'img/point8-w.png'); myMap.panTo(myPlacemark8.geometry.getCoordinates());" onmouseout="myPlacemark8.options.set('iconImageHref', 'img/point8.png')" onclick="myPlacemark8.options.set('iconImageHref', 'img/point8.png'); myPlacemark8.balloon.open()">
+					<div class="number">8</div>
+					<div class="info">
+						<h4>ОСТРОГ</h4>
+						<p class="descr">ПОГРУЖАЮЩАЯ ИНСТАЛЛЯЦИЯ В БЫВШЕЙ ЦЕРКВИ ТЮРЬМЫ</p>
+						<p class="place">ПЛОЩАДЬ СВОБОДЫ, 2А</p>
+					</div>
+				</div>
+
+
+				<div class="note soft_scroll" id="myPlacemark9" onmouseover="myPlacemark9.options.set('iconImageHref', 'img/point9-w.png'); myMap.panTo(myPlacemark9.geometry.getCoordinates());" onmouseout="myPlacemark9.options.set('iconImageHref', 'img/point9.png')" onclick="myPlacemark9.options.set('iconImageHref', 'img/point9.png'); myPlacemark9.balloon.open()">
+					<div class="number">9</div>
+					<div class="info">
+						<h4>«РЕКОРД»</h4>
+						<p class="descr">АРТ-ОБЪЕКТ С ИСПОЛЬЗОВАНИЕМ 3D-МЭППИНГА</p>
+						<p class="place">ПИСКУНОВА, 11/7</p>
+					</div>
+				</div>
+
+
+				<div class="note soft_scroll" id="myPlacemark10" onmouseover="myPlacemark10.options.set('iconImageHref', 'img/point10-w.png'); myMap.panTo(myPlacemark10.geometry.getCoordinates());" onmouseout="myPlacemark10.options.set('iconImageHref', 'img/point10.png')" onclick="myPlacemark10.options.set('iconImageHref', 'img/point10.png'); myPlacemark10.balloon.open()">
+					<div class="number">10</div>
+					<div class="info">
+						<h4>ДОМ АРХИТЕКТОРА</h4>
+						<p class="descr">ЛАЗЕРНАЯ ИНСТАЛЛЯЦИЯ НА ЛЮСТРУ В ТРИ ЭТАЖА</p>
+						<p class="place">ВЕРХНЕВОЛЖСКАЯ НАБЕРЕЖНАЯ, 2</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="card th-card">
+
+
+				<div class="note soft_scroll first-note soft_scroll" id="myPlacemark11" onmouseover="myPlacemark11.options.set('iconImageHref', 'img/point11-w.png'); myMap.panTo(myPlacemark11.geometry.getCoordinates());" onmouseout="myPlacemark11.options.set('iconImageHref', 'img/point11.png')" onclick="myPlacemark11.options.set('iconImageHref', 'img/point11.png'); myPlacemark11.balloon.open()">
+					<div class="number">11</div>
+					<div class="info">
+						<h4>АРСЕНАЛ</h4>
+						<p class="descr">МЕДИТАТИВНАЯ ИНСТАЛЛЯЦИЯ С ИСПОЛЬЗОВАНИЕМ ЛАЗЕРА И ПРОЕКЦИИ</p>
+						<p class="place">КРЕМЛЬ, 6</p>
+					</div>
+				</div>
+				<div class="head second-head">
+					<img src="img/title3.png" alt="">
+					<h3>ЛЕКЦИИ И ВОРКШОПЫ</h3>
+				</div>
+
+
+				<div class="note soft_scroll" id="myPlacemark12" onmouseover="myPlacemark12.options.set('iconImageHref', 'img/pointH-w.png'); myMap.panTo(myPlacemark12.geometry.getCoordinates());" onmouseout="myPlacemark12.options.set('iconImageHref', 'img/pointH.png')" onclick="myPlacemark12.options.set('iconImageHref', 'img/pointH.png'); myPlacemark12.balloon.open()">
+					<div class="number">Н</div>
+					<div class="info">
+						<h4>НИЖПОЛИГРАФ</h4>
+						<p class="descr">ЛЕКЦИИ И ВОРКШОПЫ</p>
+						<p class="place">ВАРВАРСКАЯ, 32</p>
+					</div>
+				</div>
+
+
+				<div class="note soft_scroll" id="myPlacemark13" onmouseover="myPlacemark13.options.set('iconImageHref', 'img/pointA-w.png'); myMap.panTo(myPlacemark13.geometry.getCoordinates());" onmouseout="myPlacemark13.options.set('iconImageHref', 'img/pointA.png')" onclick="myPlacemark13.options.set('iconImageHref', 'img/pointA.png'); myPlacemark13.balloon.open()">
+					<div class="number">А</div>
+					<div class="info">
+						<h4>АРСЕНАЛ</h4>
+						<p class="descr">ЛЕКЦИИ</p>
+						<p class="place">КРЕМЛЬ, 6</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
